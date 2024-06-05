@@ -1,5 +1,5 @@
 <template>
-  <div class="table-container">
+  <div>
     <h2>Table 1</h2>
     <div class="table-responsive">
       <table class="table table-bordered">
@@ -17,9 +17,7 @@
         </tbody>
       </table>
     </div>
-  </div>
-  <br><br><br>
-  <div class="table-container">
+    <br><br><br>
     <h2>Table 2</h2>
     <div class="table-responsive">
       <table class="table table-bordered">
@@ -39,6 +37,7 @@
     </div>
   </div>
 </template>
+
 
 <script>
 import { ApiConstant } from './repository/APIConstant';
