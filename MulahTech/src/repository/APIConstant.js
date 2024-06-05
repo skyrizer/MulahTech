@@ -1,5 +1,5 @@
 
-const apiUrl = "http://192.168.0.115:8000/api/";
+const apiUrl = "http://128.199.194.23:8000/api/";
 
 export const ApiConstant = {
     URL: apiUrl,
