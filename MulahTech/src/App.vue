@@ -1,5 +1,6 @@
 <template>
-  <div>
+ <div class="row">
+      <div class="col-12">
     <h2>Table 1</h2>
     <div class="table-responsive">
       <table class="table table-bordered">
@@ -17,26 +18,32 @@
         </tbody>
       </table>
     </div>
+  </div>
     <br><br><br>
-    <h2>Table 2</h2>
-    <div class="table-responsive">
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th>Category</th>
-            <th>Value</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="(expression, category) in expressions" :key="category">
-            <td>{{ category }}</td>
-            <td>{{ calculateValue(expression) }}</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="row">
+      <div class="col-12">
+        <h2>Table 2</h2>
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="(expression, category) in expressions" :key="category">
+                <td>{{ category }}</td>
+                <td>{{ calculateValue(expression) }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   </div>
 </template>
+
 
 
 <script>
